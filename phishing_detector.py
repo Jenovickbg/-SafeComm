@@ -1,10 +1,10 @@
-import pickle
+import joblib
 import re
 import string
 
 # Charger le modèle et le vectorizer
-model = pickle.load(open('model.pkl', 'rb'))
-vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
+model = joblib.load('model.pkl')
+vectorizer = joblib.load('vectorizer.pkl')
 
 # Fonction de nettoyage des messages
 def clean_text(text):
