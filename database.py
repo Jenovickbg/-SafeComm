@@ -4,7 +4,7 @@ import mysql.connector
 def get_db_connection():
     try:
         conn = mysql.connector.connect(
-            host="102.223.130.118",  # Adresse locale de MySQL
+            host="127.0.0.1",  # Adresse locale de MySQL
             user="root",  # Votre utilisateur MySQL
             password="",  # Mot de passe de votre utilisateur MySQL
             database="messaging_app",
