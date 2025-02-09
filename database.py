@@ -4,11 +4,11 @@ import mysql.connector
 def get_db_connection():
     try:
         conn = mysql.connector.connect(
-            host="127.0.0.1",  # Adresse locale de MySQL
+            host="localhost",  # Adresse locale de MySQL
             user="root",  # Votre utilisateur MySQL
             password="",  # Mot de passe de votre utilisateur MySQL
             database="messaging_app",
-            port=3306  # Assurez-vous que ce port est ouvert
+            port=3306 
         )
         if conn.is_connected():
             print("✅ Connexion réussie à MySQL !")
